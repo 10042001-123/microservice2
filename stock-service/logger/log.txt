@@ -1,0 +1,408 @@
+2026-08-11T08:19:25.585+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Starting StockServiceApplication using Java 17.0.12 with PID 32164 (C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service\target\classes started by nvadl in C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service)
+2026-08-11T08:19:25.586+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-11T08:19:25.901+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-11T08:19:25.917+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-08-11T08:19:26.065+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a250df0b-4b6c-3eb1-817a-fcb5e403b03e
+2026-08-11T08:19:26.254+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 2222 (http)
+2026-08-11T08:19:26.254+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-11T08:19:26.255+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-11T08:19:26.296+05:30  INFO 32164 --- [stock-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 702 ms
+2026-08-11T08:19:26.336+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-11T08:19:26.389+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-11T08:19:26.392+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2026-08-11T08:19:26.501+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection org.postgresql.jdbc.PgConnection@7c283bd
+2026-08-11T08:19:26.501+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2026-08-11T08:19:26.515+05:30  WARN 32164 --- [stock-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-11T08:19:26.526+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/stock-service]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: stock-service/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-11T08:19:26.559+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-11T08:19:26.580+05:30  INFO 32164 --- [stock-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:19:26.630+05:30  WARN 32164 --- [stock-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-11T08:19:27.112+05:30  INFO 32164 --- [stock-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-08-11T08:19:27.119+05:30  WARN 32164 --- [stock-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-11T08:19:27.130+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-11T08:19:27.131+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-11T08:19:27.132+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-11T08:19:27.148+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-11T08:19:27.148+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-11T08:19:27.149+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-11T08:19:27.149+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786416567149 with initial instances count: 2
+2026-08-11T08:19:27.151+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STOCK-SERVICE with eureka with status UP
+2026-08-11T08:19:27.151+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416567151, current=UP, previous=STARTING]
+2026-08-11T08:19:27.151+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:19:27.156+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 2222 (http) with context path '/'
+2026-08-11T08:19:27.157+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2222
+2026-08-11T08:19:27.171+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:19:27.348+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Started StockServiceApplication in 2.195 seconds (process running for 433830.628)
+2026-08-11T08:19:27.350+05:30  INFO 32164 --- [stock-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-08-11T08:20:07.286+05:30  INFO 32164 --- [stock-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-08-11T08:20:07.291+05:30  INFO 32164 --- [stock-service] [Thread-89] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STOCK-SERVICE with eureka with status DOWN
+2026-08-11T08:20:07.291+05:30  INFO 32164 --- [stock-service] [Thread-89] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416607291, current=DOWN, previous=UP]
+2026-08-11T08:20:07.292+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:20:07.296+05:30  INFO 32164 --- [stock-service] [Thread-89] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-11T08:20:07.306+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:20:07.620+05:30  INFO 32164 --- [stock-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-11T08:20:07.622+05:30  INFO 32164 --- [stock-service] [Thread-89] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:20:07.623+05:30  INFO 32164 --- [stock-service] [Thread-89] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2026-08-11T08:20:07.629+05:30  INFO 32164 --- [stock-service] [Thread-89] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2026-08-11T08:20:07.630+05:30  INFO 32164 --- [stock-service] [Thread-89] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-11T08:20:10.632+05:30  INFO 32164 --- [stock-service] [Thread-89] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-11T08:20:10.649+05:30  INFO 32164 --- [stock-service] [Thread-89] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - deregister  status: 200
+2026-08-11T08:20:10.650+05:30  INFO 32164 --- [stock-service] [Thread-89] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-08-11T08:20:10.964+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Starting StockServiceApplication using Java 17.0.12 with PID 32164 (C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service\target\classes started by nvadl in C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service)
+2026-08-11T08:20:10.965+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-11T08:20:11.255+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-11T08:20:11.270+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2026-08-11T08:20:11.358+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a250df0b-4b6c-3eb1-817a-fcb5e403b03e
+2026-08-11T08:20:11.480+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 2222 (http)
+2026-08-11T08:20:11.481+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-11T08:20:11.482+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-11T08:20:11.543+05:30  INFO 32164 --- [stock-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 576 ms
+2026-08-11T08:20:11.595+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-11T08:20:11.651+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-11T08:20:11.652+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2026-08-11T08:20:11.729+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection org.postgresql.jdbc.PgConnection@4f08d984
+2026-08-11T08:20:11.730+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2026-08-11T08:20:11.747+05:30  WARN 32164 --- [stock-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-11T08:20:11.763+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/stock-service]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: stock-service/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-11T08:20:11.815+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-11T08:20:11.870+05:30  INFO 32164 --- [stock-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:20:11.942+05:30  WARN 32164 --- [stock-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-11T08:20:12.341+05:30  INFO 32164 --- [stock-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-08-11T08:20:12.367+05:30  WARN 32164 --- [stock-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-11T08:20:12.421+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-11T08:20:12.423+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-11T08:20:12.423+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-11T08:20:12.424+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-11T08:20:12.438+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-11T08:20:12.438+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-11T08:20:12.438+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-11T08:20:12.438+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786416612438 with initial instances count: 2
+2026-08-11T08:20:12.440+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STOCK-SERVICE with eureka with status UP
+2026-08-11T08:20:12.440+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416612440, current=UP, previous=STARTING]
+2026-08-11T08:20:12.442+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:20:12.445+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 2222 (http) with context path '/'
+2026-08-11T08:20:12.446+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2222
+2026-08-11T08:20:12.464+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:20:12.606+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Started StockServiceApplication in 1.833 seconds (process running for 433875.886)
+2026-08-11T08:20:12.608+05:30  INFO 32164 --- [stock-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-08-11T08:22:03.392+05:30  INFO 32164 --- [stock-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-08-11T08:22:03.396+05:30  INFO 32164 --- [stock-service] [Thread-95] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STOCK-SERVICE with eureka with status DOWN
+2026-08-11T08:22:03.397+05:30  INFO 32164 --- [stock-service] [Thread-95] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416723397, current=DOWN, previous=UP]
+2026-08-11T08:22:03.397+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:22:03.399+05:30  INFO 32164 --- [stock-service] [Thread-95] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-11T08:22:03.411+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:22:03.782+05:30  INFO 32164 --- [stock-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-11T08:22:03.786+05:30  INFO 32164 --- [stock-service] [Thread-95] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:22:03.787+05:30  INFO 32164 --- [stock-service] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2026-08-11T08:22:03.797+05:30  INFO 32164 --- [stock-service] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2026-08-11T08:22:03.798+05:30  INFO 32164 --- [stock-service] [Thread-95] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-11T08:22:06.805+05:30  INFO 32164 --- [stock-service] [Thread-95] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-11T08:22:06.824+05:30  INFO 32164 --- [stock-service] [Thread-95] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - deregister  status: 200
+2026-08-11T08:22:06.825+05:30  INFO 32164 --- [stock-service] [Thread-95] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-08-11T08:22:07.043+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Starting StockServiceApplication using Java 17.0.12 with PID 32164 (C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service\target\classes started by nvadl in C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service)
+2026-08-11T08:22:07.043+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-11T08:22:07.186+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-11T08:22:07.196+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2026-08-11T08:22:07.251+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a250df0b-4b6c-3eb1-817a-fcb5e403b03e
+2026-08-11T08:22:07.298+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 2222 (http)
+2026-08-11T08:22:07.298+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-11T08:22:07.299+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-11T08:22:07.340+05:30  INFO 32164 --- [stock-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 294 ms
+2026-08-11T08:22:07.382+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-11T08:22:07.439+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-11T08:22:07.441+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2026-08-11T08:22:07.655+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection org.postgresql.jdbc.PgConnection@5d2a3164
+2026-08-11T08:22:07.655+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2026-08-11T08:22:07.669+05:30  WARN 32164 --- [stock-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-11T08:22:07.684+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/stock-service]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: stock-service/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-11T08:22:07.724+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-11T08:22:07.752+05:30  INFO 32164 --- [stock-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:22:07.844+05:30  WARN 32164 --- [stock-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-11T08:22:08.183+05:30  INFO 32164 --- [stock-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-08-11T08:22:08.195+05:30  WARN 32164 --- [stock-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-11T08:22:08.230+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-11T08:22:08.232+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-11T08:22:08.232+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-11T08:22:08.232+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-11T08:22:08.233+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-11T08:22:08.233+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-11T08:22:08.233+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-11T08:22:08.233+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-11T08:22:08.233+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-11T08:22:08.233+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-11T08:22:08.242+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-11T08:22:08.242+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-11T08:22:08.242+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-11T08:22:08.242+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786416728242 with initial instances count: 2
+2026-08-11T08:22:08.245+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STOCK-SERVICE with eureka with status UP
+2026-08-11T08:22:08.245+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416728245, current=UP, previous=STARTING]
+2026-08-11T08:22:08.249+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 2222 (http) with context path '/'
+2026-08-11T08:22:08.249+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:22:08.249+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2222
+2026-08-11T08:22:08.272+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:22:08.643+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Started StockServiceApplication in 1.713 seconds (process running for 433991.923)
+2026-08-11T08:22:08.647+05:30  INFO 32164 --- [stock-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-08-11T08:22:20.632+05:30  INFO 32164 --- [stock-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-08-11T08:22:20.635+05:30  INFO 32164 --- [stock-service] [Thread-101] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STOCK-SERVICE with eureka with status DOWN
+2026-08-11T08:22:20.635+05:30  INFO 32164 --- [stock-service] [Thread-101] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416740635, current=DOWN, previous=UP]
+2026-08-11T08:22:20.636+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:22:20.638+05:30  INFO 32164 --- [stock-service] [Thread-101] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-11T08:22:20.657+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:22:20.920+05:30  INFO 32164 --- [stock-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-11T08:22:20.923+05:30  INFO 32164 --- [stock-service] [Thread-101] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:22:20.924+05:30  INFO 32164 --- [stock-service] [Thread-101] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2026-08-11T08:22:20.934+05:30  INFO 32164 --- [stock-service] [Thread-101] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2026-08-11T08:22:20.934+05:30  INFO 32164 --- [stock-service] [Thread-101] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-11T08:22:23.947+05:30  INFO 32164 --- [stock-service] [Thread-101] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-11T08:22:23.971+05:30  INFO 32164 --- [stock-service] [Thread-101] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - deregister  status: 200
+2026-08-11T08:22:23.972+05:30  INFO 32164 --- [stock-service] [Thread-101] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-08-11T08:22:24.340+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Starting StockServiceApplication using Java 17.0.12 with PID 32164 (C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service\target\classes started by nvadl in C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service)
+2026-08-11T08:22:24.340+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-11T08:22:24.660+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-11T08:22:24.676+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-08-11T08:22:24.777+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a250df0b-4b6c-3eb1-817a-fcb5e403b03e
+2026-08-11T08:22:24.907+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 2222 (http)
+2026-08-11T08:22:24.908+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-11T08:22:24.908+05:30  INFO 32164 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-11T08:22:24.962+05:30  INFO 32164 --- [stock-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 618 ms
+2026-08-11T08:22:24.999+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-11T08:22:25.050+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-11T08:22:25.052+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2026-08-11T08:22:25.157+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection org.postgresql.jdbc.PgConnection@5f76db88
+2026-08-11T08:22:25.157+05:30  INFO 32164 --- [stock-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2026-08-11T08:22:25.171+05:30  WARN 32164 --- [stock-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-11T08:22:25.184+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/stock-service]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: stock-service/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-11T08:22:25.241+05:30  INFO 32164 --- [stock-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-11T08:22:25.299+05:30  INFO 32164 --- [stock-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:22:25.372+05:30  WARN 32164 --- [stock-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-11T08:22:25.759+05:30  INFO 32164 --- [stock-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-08-11T08:22:25.768+05:30  WARN 32164 --- [stock-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-11T08:22:25.781+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-11T08:22:25.782+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-11T08:22:25.790+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-11T08:22:25.790+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-11T08:22:25.790+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-11T08:22:25.790+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786416745790 with initial instances count: 2
+2026-08-11T08:22:25.791+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STOCK-SERVICE with eureka with status UP
+2026-08-11T08:22:25.791+05:30  INFO 32164 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416745791, current=UP, previous=STARTING]
+2026-08-11T08:22:25.791+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:22:25.796+05:30  INFO 32164 --- [stock-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 2222 (http) with context path '/'
+2026-08-11T08:22:25.796+05:30  INFO 32164 --- [stock-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2222
+2026-08-11T08:22:25.805+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:22:25.917+05:30  INFO 32164 --- [stock-service] [restartedMain] c.n.s.StockServiceApplication            : Started StockServiceApplication in 1.831 seconds (process running for 434009.197)
+2026-08-11T08:22:25.918+05:30  INFO 32164 --- [stock-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-08-11T08:22:38.292+05:30  INFO 32164 --- [stock-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-08-11T08:22:38.293+05:30  INFO 32164 --- [stock-service] [Thread-107] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STOCK-SERVICE with eureka with status DOWN
+2026-08-11T08:22:38.293+05:30  INFO 32164 --- [stock-service] [Thread-107] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786416758293, current=DOWN, previous=UP]
+2026-08-11T08:22:38.294+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service...
+2026-08-11T08:22:38.295+05:30  INFO 32164 --- [stock-service] [Thread-107] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-11T08:22:38.311+05:30  INFO 32164 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204
+2026-08-11T08:22:38.642+05:30  INFO 32164 --- [stock-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-11T08:22:38.646+05:30  INFO 32164 --- [stock-service] [Thread-107] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11T08:22:38.647+05:30  INFO 32164 --- [stock-service] [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2026-08-11T08:22:38.658+05:30  INFO 32164 --- [stock-service] [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2026-08-11T08:22:38.658+05:30  INFO 32164 --- [stock-service] [Thread-107] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-11T08:22:41.661+05:30  INFO 32164 --- [stock-service] [Thread-107] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-11T08:22:41.679+05:30  INFO 32164 --- [stock-service] [Thread-107] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - deregister  status: 200
+2026-08-11T08:22:41.681+05:30  INFO 32164 --- [stock-service] [Thread-107] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+com.naveen.stock_service.StockServiceApplication :INFO  -->Starting StockServiceApplication using Java 17.0.12 with PID 32164 (C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service\target\classes started by nvadl in C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service) : logStarting :: 2026-08-11 08:22:41,919  
+com.naveen.stock_service.StockServiceApplication :INFO  -->No active profile set, falling back to 1 default profile: "default" : logStartupProfileInfo :: 2026-08-11 08:22:41,924  
+org.springframework.data.repository.config.RepositoryConfigurationDelegate :INFO  -->Bootstrapping Spring Data JPA repositories in DEFAULT mode. : registerRepositoriesIn :: 2026-08-11 08:22:42,194  
+org.springframework.data.repository.config.RepositoryConfigurationDelegate :INFO  -->Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface. : registerRepositoriesIn :: 2026-08-11 08:22:42,210  
+org.springframework.cloud.context.scope.GenericScope :INFO  -->BeanFactory id=a250df0b-4b6c-3eb1-817a-fcb5e403b03e : setSerializationId :: 2026-08-11 08:22:42,309  
+org.springframework.boot.tomcat.TomcatWebServer :INFO  -->Tomcat initialized with port 2222 (http) : initialize :: 2026-08-11 08:22:42,420  
+org.apache.catalina.core.StandardService :INFO  -->Starting service [Tomcat] : log :: 2026-08-11 08:22:42,420  
+org.apache.catalina.core.StandardEngine :INFO  -->Starting Servlet engine: [Apache Tomcat/11.0.22] : log :: 2026-08-11 08:22:42,420  
+org.springframework.boot.web.context.servlet.WebApplicationContextInitializer :INFO  -->Root WebApplicationContext: initialization completed in 549 ms : prepareWebApplicationContext :: 2026-08-11 08:22:42,475  
+org.hibernate.orm.jpa :INFO  -->HHH008540: Processing PersistenceUnitInfo [name: default] : logPersistenceUnitInformation :: 2026-08-11 08:22:42,525  
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :INFO  -->No LoadTimeWeaver setup: ignoring JPA class transformer : addTransformer :: 2026-08-11 08:22:42,587  
+com.zaxxer.hikari.HikariDataSource :INFO  -->HikariPool-20 - Starting... : getConnection :: 2026-08-11 08:22:42,589  
+com.zaxxer.hikari.pool.HikariPool :INFO  -->HikariPool-20 - Added connection org.postgresql.jdbc.PgConnection@54cbc10f : checkFailFast :: 2026-08-11 08:22:42,679  
+com.zaxxer.hikari.HikariDataSource :INFO  -->HikariPool-20 - Start completed. : getConnection :: 2026-08-11 08:22:42,679  
+org.hibernate.orm.deprecation :WARN  -->HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) : constructDialect :: 2026-08-11 08:22:42,692  
+org.hibernate.orm.connections.pooling :INFO  -->HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/stock-service]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: stock-service/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown : logConnectionInfo :: 2026-08-11 08:22:42,704  
+org.hibernate.orm.core :INFO  -->HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) : initiateService :: 2026-08-11 08:22:42,741  
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :INFO  -->Initialized JPA EntityManagerFactory for persistence unit 'default' : buildNativeEntityManagerFactory :: 2026-08-11 08:22:42,779  
+org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration :WARN  -->spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning : openEntityManagerInViewInterceptor :: 2026-08-11 08:22:42,853  
+org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :INFO  -->Eureka HTTP Client uses RestClient. : restClientDiscoveryClientOptionalArgs :: 2026-08-11 08:22:43,161  
+org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :WARN  -->Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. : afterPropertiesSet :: 2026-08-11 08:22:43,170  
+org.springframework.cloud.netflix.eureka.InstanceInfoFactory :INFO  -->Setting initial instance status as: STARTING : create :: 2026-08-11 08:22:43,179  
+com.netflix.discovery.DiscoveryClient :INFO  -->Initializing Eureka in region us-east-1 : <init> :: 2026-08-11 08:22:43,180  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Disable delta property : false : fetchRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Single vip registry refresh property : null : fetchRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Force full registry fetch : false : fetchRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Application is null : false : fetchRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Registered Applications size is zero : true : fetchRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Application version is -1: true : fetchRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->Getting all instance registry info from the eureka server : getAndStoreFullRegistry :: 2026-08-11 08:22:43,181  
+com.netflix.discovery.DiscoveryClient :INFO  -->The response status is 200 : getAndStoreFullRegistry :: 2026-08-11 08:22:43,189  
+com.netflix.discovery.DiscoveryClient :INFO  -->Starting heartbeat executor: renew interval is: 30 : initScheduledTasks :: 2026-08-11 08:22:43,189  
+com.netflix.discovery.InstanceInfoReplicator :INFO  -->InstanceInfoReplicator onDemand update allowed rate per min is 4 : <init> :: 2026-08-11 08:22:43,189  
+com.netflix.discovery.DiscoveryClient :INFO  -->Discovery Client initialized at timestamp 1786416763189 with initial instances count: 2 : <init> :: 2026-08-11 08:22:43,189  
+org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :INFO  -->Registering application STOCK-SERVICE with eureka with status UP : register :: 2026-08-11 08:22:43,190  
+com.netflix.discovery.DiscoveryClient :INFO  -->Saw local status change event StatusChangeEvent [timestamp=1786416763192, current=UP, previous=STARTING] : notify :: 2026-08-11 08:22:43,192  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service... : register :: 2026-08-11 08:22:43,192  
+org.springframework.boot.tomcat.TomcatWebServer :INFO  -->Tomcat started on port 2222 (http) with context path '/' : start :: 2026-08-11 08:22:43,196  
+org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :INFO  -->Updating port to 2222 : onApplicationEvent :: 2026-08-11 08:22:43,196  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204 : register :: 2026-08-11 08:22:43,216  
+com.naveen.stock_service.StockServiceApplication :INFO  -->Started StockServiceApplication in 1.538 seconds (process running for 434026.603) : logStarted :: 2026-08-11 08:22:43,323  
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener :INFO  -->Condition evaluation unchanged : onApplicationEvent :: 2026-08-11 08:22:43,324  
+org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin :INFO  -->Application shutdown requested. : shutdown :: 2026-08-11 08:23:06,386  
+org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :INFO  -->Unregistering application STOCK-SERVICE with eureka with status DOWN : deregister :: 2026-08-11 08:23:06,387  
+com.netflix.discovery.DiscoveryClient :INFO  -->Saw local status change event StatusChangeEvent [timestamp=1786416786388, current=DOWN, previous=UP] : notify :: 2026-08-11 08:23:06,388  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service... : register :: 2026-08-11 08:23:06,389  
+org.springframework.boot.tomcat.GracefulShutdown :INFO  -->Commencing graceful shutdown. Waiting for active requests to complete : shutDownGracefully :: 2026-08-11 08:23:06,389  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204 : register :: 2026-08-11 08:23:06,410  
+org.springframework.boot.tomcat.GracefulShutdown :INFO  -->Graceful shutdown complete : doShutdown :: 2026-08-11 08:23:06,623  
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :INFO  -->Closing JPA EntityManagerFactory for persistence unit 'default' : destroy :: 2026-08-11 08:23:06,625  
+com.zaxxer.hikari.HikariDataSource :INFO  -->HikariPool-20 - Shutdown initiated... : close :: 2026-08-11 08:23:06,626  
+com.zaxxer.hikari.HikariDataSource :INFO  -->HikariPool-20 - Shutdown completed. : close :: 2026-08-11 08:23:06,629  
+com.netflix.discovery.DiscoveryClient :INFO  -->Shutting down DiscoveryClient ... : shutdown :: 2026-08-11 08:23:06,632  
+com.netflix.discovery.DiscoveryClient :INFO  -->Unregistering ... : unregister :: 2026-08-11 08:23:09,646  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - deregister  status: 200 : unregister :: 2026-08-11 08:23:09,664  
+com.netflix.discovery.DiscoveryClient :INFO  -->Completed shut down of DiscoveryClient : shutdown :: 2026-08-11 08:23:09,665  
+com.naveen.stock_service.StockServiceApplication :INFO  -->Starting StockServiceApplication using Java 17.0.12 with PID 29232 (C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service\target\classes started by nvadl in C:\SPRINGBOOTAPPLICATION\Microservice-2\stock-service) : logStarting :: 2026-08-11 08:23:37,734  
+com.naveen.stock_service.StockServiceApplication :INFO  -->No active profile set, falling back to 1 default profile: "default" : logStartupProfileInfo :: 2026-08-11 08:23:37,739  
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :INFO  -->Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable : log :: 2026-08-11 08:23:37,797  
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :INFO  -->For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' : log :: 2026-08-11 08:23:37,797  
+org.springframework.data.repository.config.RepositoryConfigurationDelegate :INFO  -->Bootstrapping Spring Data JPA repositories in DEFAULT mode. : registerRepositoriesIn :: 2026-08-11 08:23:39,034  
+org.springframework.data.repository.config.RepositoryConfigurationDelegate :INFO  -->Finished Spring Data repository scanning in 376 ms. Found 1 JPA repository interface. : registerRepositoriesIn :: 2026-08-11 08:23:39,437  
+org.springframework.cloud.context.scope.GenericScope :INFO  -->BeanFactory id=a250df0b-4b6c-3eb1-817a-fcb5e403b03e : setSerializationId :: 2026-08-11 08:23:39,805  
+org.springframework.boot.tomcat.TomcatWebServer :INFO  -->Tomcat initialized with port 2222 (http) : initialize :: 2026-08-11 08:23:40,648  
+org.apache.catalina.core.StandardService :INFO  -->Starting service [Tomcat] : log :: 2026-08-11 08:23:40,674  
+org.apache.catalina.core.StandardEngine :INFO  -->Starting Servlet engine: [Apache Tomcat/11.0.22] : log :: 2026-08-11 08:23:40,675  
+org.springframework.boot.web.context.servlet.WebApplicationContextInitializer :INFO  -->Root WebApplicationContext: initialization completed in 2985 ms : prepareWebApplicationContext :: 2026-08-11 08:23:40,784  
+org.hibernate.orm.jpa :INFO  -->HHH008540: Processing PersistenceUnitInfo [name: default] : logPersistenceUnitInformation :: 2026-08-11 08:23:41,087  
+org.hibernate.orm.core :INFO  -->HHH000001: Hibernate ORM core version 7.4.1.Final : logVersion :: 2026-08-11 08:23:41,256  
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :INFO  -->No LoadTimeWeaver setup: ignoring JPA class transformer : addTransformer :: 2026-08-11 08:23:42,234  
+com.zaxxer.hikari.HikariDataSource :INFO  -->HikariPool-1 - Starting... : getConnection :: 2026-08-11 08:23:42,293  
+com.zaxxer.hikari.pool.HikariPool :INFO  -->HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1497ea97 : checkFailFast :: 2026-08-11 08:23:42,607  
+com.zaxxer.hikari.HikariDataSource :INFO  -->HikariPool-1 - Start completed. : getConnection :: 2026-08-11 08:23:42,612  
+org.hibernate.orm.deprecation :WARN  -->HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) : constructDialect :: 2026-08-11 08:23:42,702  
+org.hibernate.orm.connections.pooling :INFO  -->HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/stock-service]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: stock-service/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown : logConnectionInfo :: 2026-08-11 08:23:42,750  
+org.hibernate.orm.core :INFO  -->HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) : initiateService :: 2026-08-11 08:23:44,043  
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :INFO  -->Initialized JPA EntityManagerFactory for persistence unit 'default' : buildNativeEntityManagerFactory :: 2026-08-11 08:23:44,135  
+org.springframework.data.jpa.repository.query.QueryEnhancerFactories :INFO  -->Hibernate is in classpath; If applicable, HQL parser will be used. : <clinit> :: 2026-08-11 08:23:44,281  
+org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration :WARN  -->spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning : openEntityManagerInViewInterceptor :: 2026-08-11 08:23:44,681  
+org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :INFO  -->Eureka HTTP Client uses RestClient. : restClientDiscoveryClientOptionalArgs :: 2026-08-11 08:23:46,038  
+org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :WARN  -->Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. : afterPropertiesSet :: 2026-08-11 08:23:46,090  
+org.springframework.cloud.netflix.eureka.InstanceInfoFactory :INFO  -->Setting initial instance status as: STARTING : create :: 2026-08-11 08:23:46,190  
+com.netflix.discovery.DiscoveryClient :INFO  -->Initializing Eureka in region us-east-1 : <init> :: 2026-08-11 08:23:46,240  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:23:46,248  
+com.netflix.discovery.DiscoveryClient :INFO  -->Disable delta property : false : fetchRegistry :: 2026-08-11 08:23:46,264  
+com.netflix.discovery.DiscoveryClient :INFO  -->Single vip registry refresh property : null : fetchRegistry :: 2026-08-11 08:23:46,264  
+com.netflix.discovery.DiscoveryClient :INFO  -->Force full registry fetch : false : fetchRegistry :: 2026-08-11 08:23:46,265  
+com.netflix.discovery.DiscoveryClient :INFO  -->Application is null : false : fetchRegistry :: 2026-08-11 08:23:46,265  
+com.netflix.discovery.DiscoveryClient :INFO  -->Registered Applications size is zero : true : fetchRegistry :: 2026-08-11 08:23:46,265  
+com.netflix.discovery.DiscoveryClient :INFO  -->Application version is -1: true : fetchRegistry :: 2026-08-11 08:23:46,265  
+com.netflix.discovery.DiscoveryClient :INFO  -->Getting all instance registry info from the eureka server : getAndStoreFullRegistry :: 2026-08-11 08:23:46,266  
+com.netflix.discovery.DiscoveryClient :INFO  -->The response status is 200 : getAndStoreFullRegistry :: 2026-08-11 08:23:47,016  
+com.netflix.discovery.DiscoveryClient :INFO  -->Starting heartbeat executor: renew interval is: 30 : initScheduledTasks :: 2026-08-11 08:23:47,023  
+com.netflix.discovery.InstanceInfoReplicator :INFO  -->InstanceInfoReplicator onDemand update allowed rate per min is 4 : <init> :: 2026-08-11 08:23:47,028  
+com.netflix.discovery.DiscoveryClient :INFO  -->Discovery Client initialized at timestamp 1786416827033 with initial instances count: 1 : <init> :: 2026-08-11 08:23:47,035  
+org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :INFO  -->Registering application STOCK-SERVICE with eureka with status UP : register :: 2026-08-11 08:23:47,042  
+com.netflix.discovery.DiscoveryClient :INFO  -->Saw local status change event StatusChangeEvent [timestamp=1786416827045, current=UP, previous=STARTING] : notify :: 2026-08-11 08:23:47,045  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222: registering service... : register :: 2026-08-11 08:23:47,050  
+org.springframework.boot.tomcat.TomcatWebServer :INFO  -->Tomcat started on port 2222 (http) with context path '/' : start :: 2026-08-11 08:23:47,108  
+org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :INFO  -->Updating port to 2222 : onApplicationEvent :: 2026-08-11 08:23:47,111  
+com.netflix.discovery.DiscoveryClient :INFO  -->DiscoveryClient_STOCK-SERVICE/praveen:stock-service:2222 - registration status: 204 : register :: 2026-08-11 08:23:47,138  
+com.naveen.stock_service.StockServiceApplication :INFO  -->Started StockServiceApplication in 10.596 seconds (process running for 12.086) : logStarted :: 2026-08-11 08:23:47,350  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:28:46,270  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:33:46,278  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:38:46,294  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:43:46,302  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:48:46,329  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:53:46,340  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 08:58:46,354  
+com.zaxxer.hikari.pool.HikariPool :WARN  -->HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m52s672ms872µs800ns). : run :: 2026-08-11 09:05:05,997  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 09:08:09,018  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 09:13:09,052  
+com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :INFO  -->Resolving eureka endpoints via configuration : getClusterEndpoints :: 2026-08-11 09:18:09,073  
